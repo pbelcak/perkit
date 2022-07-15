@@ -10,6 +10,7 @@ from .feedforward.snake_model import SnakeModel, TSnakeModel
 from .decoder.SRNN_model import SRNNModel
 from .decoder.GRU_model import GRUModel
 from .decoder.LSTM_model import LSTMModel
+from .genetic.bayes import BayesModel
 from .genetic.pareto import ParetoModel
 from .genetic.nfittest import nFittestModel
 
@@ -27,6 +28,7 @@ model_map = {
 	"decoder_gru":		(GRUModel,		True),
 	"decoder_lstm":		(LSTMModel,		True),
 
+	"bayes":			(BayesModel,	False),
 	"genetic_pareto":	(ParetoModel,	False),
 	"genetic_nfittest":	(nFittestModel,	False),
 }
